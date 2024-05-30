@@ -1,7 +1,8 @@
-package ro.ase.ism
+package ro.ase.ism.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ro.ase.ism.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    tools:context=".ui.MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:id="@+id/text_view_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public Key Appears Here"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/button_get_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Public Key"
+        android:layout_below="@id/text_view_key"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button_post_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Public Key"
+        android:layout_below="@id/button_get_key"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button_send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:layout_below="@id/button_post_key"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Message Here"
+        android:layout_below="@id/button_send_message"
+        android:layout_marginTop="10dp"
+        android:padding="10dp" />
+</RelativeLayout>
